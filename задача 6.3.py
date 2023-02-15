@@ -4,7 +4,7 @@ from threading import Thread
 
 def get_html(link):
     r = requests.get('https://www.kinopoisk.ru/')
-    print(r)
+    print(r.text)
     print(f'thread name {link}')
 
 for i in range(5):
